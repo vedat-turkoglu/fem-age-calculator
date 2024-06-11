@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/globals.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Fem - age calculator</title>
+  </head>
+  <body>
+    <div class="card">
+      <div class="wrapper">
+        <div class="card__row-1">
+          <div class="day-box flex-container">
+            <label id="label-day" for="day">DAY</label>
+            <input placeholder="DD" type="number" name="day" id="day" />
+            <p class="error-message" id="day_err">This field is required</p>
+          </div>
+
+          <div class="month-box flex-container">
+            <label id="label-month" for="month">MONTH</label>
+            <input placeholder="MM" type="number" name="month" id="month" />
+            <p class="error-message" id="month_err">This field is required</p>
+          </div>
+
+          <div class="year-box flex-container">
+            <label id="label-year" for="year">YEAR</label>
+            <input placeholder="YYYY" type="number" name="year" id="year" />
+            <p class="error-message" id="year_err">This field is required</p>
+          </div>
+        </div>
+
+        <div class="card__row-2">
+          <div class="line"></div>
+          <button id="calc-btn" class="card__row-2__icon-box">
+            <img
+              src="./assets/images/icon-arrow.svg"
+              alt="button"
+              class="icon-arrow"
+              width="44"
+              height="44"
+            />
+          </button>
+          <div class="line line-mobile"></div>
+        </div>
+
+        <div class="card__output-box">
+          <div>
+            <span id="output-years" class="output-number">--</span>
+            <span class="output-text">years</span>
+          </div>
+          <div>
+            <span id="output-months" class="output-number">--</span>
+            <span class="output-text">months</span>
+          </div>
+          <div>
+            <span id="output-days" class="output-number">--</span>
+            <span class="output-text">days</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
