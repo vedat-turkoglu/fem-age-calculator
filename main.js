@@ -96,7 +96,8 @@ const validateDay = () => {
     inputErrorHandler(labelDay, inputDay, dayErr);
   } else if (
     !numberCheckday ||
-    Number(day) > months[Number(month) || Number(day) < 1]
+    Number(day) > months[Number(month)] ||
+    Number(day) < 1
   ) {
     dayErr.textContent = "Must be a valid date";
     inputErrorHandler(labelDay, inputDay, dayErr);
